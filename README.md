@@ -6,7 +6,7 @@
 &emsp;Object co-segmentation is to segment the shared objects in multiple relevant images, which has numerous applications in computer vision. This paper presents a spatial and semantic modulated deep network framework for object co-segmentation. A backbone network is adopted to extract multi-resolution image features. With the multi-resolution features of the relevant images as input, we design a spatial modulator to learn a mask for each image. The spatial modulator captures the correlations of image feature descriptors via unsupervised learning. The learned mask can roughly localize the shared foreground object while suppressing the background. For the semantic modulator, we model it as a supervised image classification task. We propose a hierarchical second-order pooling module to transform the image features for classification use. The outputs of the two modulators manipulate the multi-resolution features by a shift-and-scale operation so that the features focus on segmenting co-object regions. The proposed model is trained end-to-end without any intricate post-processing. Extensive experiments on four image co-segmentation benchmark datasets demonstrate the superior accuracy of the proposed method compared to state-of-the-art methods.
 
 ## Overview of our method
-![](https://github.com/cj4L/SSNM-Coseg/raw/master/network.png)
+![](https://github.com/cj4L/SSNM-Coseg/raw/master/pic/network.png)
 
 &emsp;We propose a spatial-semantic modulated deep network for object co-segmentation. Image features extracted by a backbone network are used to learn a spatial modulator and a semantic modulator. The outputs of the modulators guide the image features up-sampling to generate the co-segmentation results. The network parameter learning is formulated into a multi-task learning task, and the whole network is trained in an end-to-end manner.
 
@@ -22,5 +22,13 @@
 * The PASCAL-VOC is the most challenging dataset with 1037 images of 20 categories selected from the PASCAL-VOC 2010 dataset.
 
 ## Results
+<p align="center">
+  <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/MSRC.png" width="50%" height="50%">  
+</p>
+<p align="center">
+  <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/Internet.png" width="70%" height="70%">  
+</p>
+<img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/iCoseg.png" width="100%" height="100%">  
+<img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/PASCALVOC.png" width="100%" height="100%">  
 
 code and results will be released soon.
