@@ -19,9 +19,9 @@
 * The sub-set of MSRC includes 7 classes: bird, car, cat, cow, dog, plane, sheep, and each class contains 10 images.  
 * The Internet has 3 categories of airplane, car and horse. Each class has 100 images including some images with noisy labels.  
 * The sub-set of iCoseg contains 8 categories, and each has a different number of images.  
-* The PASCAL-VOC is the most challenging dataset with 1037 images of 20 categories selected from the PASCAL-VOC 2010 dataset.
+* The PASCAL-VOC is the most challenging dataset with 1037 images of 20 categories selected from the PASCAL-VOC 2010 dataset.  
 
-## Results
+## Quantitative results
 <p align="center">
   <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/MSRC.png" width="50%" height="50%">  
 </p>
@@ -31,4 +31,10 @@
 <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/iCoseg.png" width="100%" height="100%">  
 <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/PASCALVOC.png" width="100%" height="100%">  
 
-code and results will be released soon.
+## Qualitative results
+
+#### Schedule
+- [x] Create github repo (2019.11.18)
+- [x] Release arXiv pdf (2019.12.2)
+- [ ] All results (soon)
+- [ ] Test and Train code (soon)
