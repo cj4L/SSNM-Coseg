@@ -21,6 +21,14 @@
 * The sub-set of iCoseg contains 8 categories, and each has a different number of images.  
 * The PASCAL-VOC is the most challenging dataset with 1037 images of 20 categories selected from the PASCAL-VOC 2010 dataset.  
 
+## Qualitative results
+<p align="center">
+  <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/unseen.png" width="80%" height="80%">  
+</p>
+<p align="center">
+  <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/seen.png" width="80%" height="80%">  
+</p>
+
 ## Quantitative results
 <p align="center">
   <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/MSRC.png" width="50%" height="50%">  
@@ -31,7 +39,6 @@
 <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/iCoseg.png" width="100%" height="100%">  
 <img src="https://github.com/cj4L/SSNM-Coseg/raw/master/pic/PASCALVOC.png" width="100%" height="100%">  
 
-## Qualitative results
 
 #### Schedule
 - [x] Create github repo (2019.11.18)
