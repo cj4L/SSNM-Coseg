@@ -30,26 +30,11 @@
 * PyTorch>=1.0, TorchVision>=0.2.2
 * Numpy==1.16.2, Pillow, pycocotools
 
-## Test
-* Get or download the dataset we have processed in [Google Drive](https://drive.google.com/file/d/1bo5zE64bQwLUbCUGKDLcRjHei9FBmhfi/view?usp=sharing) or [Baidupan code:ap2u](https://pan.baidu.com/s/1PeIj3YLIde-0BB8raC3KBQ).
-* Download VGG16-backbone pretrained model in [Google Drive](https://drive.google.com/file/d/1Vvir1CeuCNQY7GU_Ygh593U5I-KXZWff/view?usp=sharing) or [Baidupan code:eoav](https://pan.baidu.com/s/1VMJoxXPm1n3xupVZb3EiBg).
-* Modify the path config in coseg_test.py and run it.
 
-## Train
-* Get the COCO2017 Dataset for training the whole network.
-* Get the test dataset for val and test phase.
-* Download VGG16 pretrained weights in [Google Drive](https://drive.google.com/file/d/1KIWIspVxLRwv8bzOuMn6lY8kStoedToV/view?usp=sharing) or [Baidupan code:3aga](https://pan.baidu.com/s/1iI7Umk7TNiOiI_wL43ipAw). Actually is from PyTorch offical model weights, expect for deleting the last serveral layers.
-* Download dict.npy in [Google Drive](https://drive.google.com/file/d/1p15hGN3YwqWMRN4xx5mDIK04OhimpY2z/view?usp=sharing) or [Baidupan code:9ccf](https://pan.baidu.com/s/1n8CKyZWoP1tUr1FtyZouig).
-* Modify the path config in main.py and run it.
-
-### Notes
-* Following the suggestion of reviewers in AAAI20, we would not release the HRNet-backbone trained model for fairly comparing with others methods. 
-* There are some slight differences in the 'Fusion' part of the model but little impact.
-* There is a mistake value in Table 2, our HRNet J-index(82.5) in 'Car' in Internet Dataset should be modified with (73.9).
 
 #### Schedule
 - [x] Create github repo (2019.11.18)
 - [x] Release arXiv pdf (2019.12.2)
 - [x] Release AAAI20 pdf (2020.7.3)
 - [x] All results (2020.7.3)
-- [x] Test and Train code (2020.7.3)
+- [ ] Test and Train code (soon)
