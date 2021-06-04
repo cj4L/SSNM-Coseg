@@ -21,8 +21,8 @@
 * The PASCAL-VOC is the most challenging dataset with 1037 images of 20 categories selected from the PASCAL-VOC 2010 dataset.  
 
 ## Results download
-* VGG16-backbone: [Google Drive](https://drive.google.com/file/d/14h2XdIB0GR1Zb_0X59T0URgbuogJpR5Z/view?usp=sharing) or [Baidupan code:fxat](https://pan.baidu.com/s/1bG5Biq3omAkBaY9mHRzrZw).
-* HRNet-backbone: [Google Drive](https://drive.google.com/file/d/1r8piQHHVosecDJD6DmDZVriUzEfQxCeB/view?usp=sharing) or [Baidupan code:mn2k](https://pan.baidu.com/s/1bht2GhxCBM4XPk9GMahpwg).
+* VGG16-backbone: [Google Drive](https://drive.google.com/file/d/14h2XdIB0GR1Zb_0X59T0URgbuogJpR5Z/view?usp=sharing).
+* HRNet-backbone: [Google Drive](https://drive.google.com/file/d/1r8piQHHVosecDJD6DmDZVriUzEfQxCeB/view?usp=sharing).
 
 ## Environment
 * Ubuntu 16.04, Nvidia RTX 2080Ti
@@ -30,11 +30,27 @@
 * PyTorch>=1.0, TorchVision>=0.2.2
 * Numpy==1.16.2, Pillow, pycocotools
 
+## Test
+* Get or download the dataset we have processed in [Google Drive](https://drive.google.com/file/d/1bo5zE64bQwLUbCUGKDLcRjHei9FBmhfi/view?usp=sharing).
+* Download VGG16-backbone pretrained model in [Google Drive](https://drive.google.com/file/d/1Vvir1CeuCNQY7GU_Ygh593U5I-KXZWff/view?usp=sharing).
+* Modify the path config in coseg_test.py and run it.
 
+## Train
+* Get the COCO2017 Dataset for training the whole network.
+* Get the test dataset for val and test phase.
+* Download VGG16 pretrained weights in [Google Drive](https://drive.google.com/file/d/1KIWIspVxLRwv8bzOuMn6lY8kStoedToV/view?usp=sharing). Actually is from PyTorch offical model weights, expect for deleting the last serveral layers.
+* Download dict.npy in [Google Drive](https://drive.google.com/file/d/1p15hGN3YwqWMRN4xx5mDIK04OhimpY2z/view?usp=sharing).
+* Modify the path config in main.py and run it.
+
+### Notes
+* Following the suggestion of reviewers in AAAI20, we would not release the HRNet-backbone trained model for fairly comparing with others methods. 
+* There are some slight differences in the 'Fusion' part of the model but little impact.
+* There is a mistake value in Table 2, our HRNet J-index(82.5) in 'Car' in Internet Dataset should be modified with (73.9).
+* There is something wrong about the share link of BaiduPan, contact me if want. 
 
 #### Schedule
 - [x] Create github repo (2019.11.18)
 - [x] Release arXiv pdf (2019.12.2)
 - [x] Release AAAI20 pdf (2020.7.3)
 - [x] All results (2020.7.3)
-- [ ] Test and Train code (soon)
+- [x] Test and Train code (2021.6.4)
